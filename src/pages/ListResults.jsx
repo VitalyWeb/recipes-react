@@ -2,7 +2,7 @@ import React, { useReducer, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import SmallCard from '../components/SmallCard.jsx';
 
-const API_BASE = 'https://www.themealdb.com/api/json/v1/1';
+const API_BASE = process.env.REACT_APP_API_BASE;
 
 const initialState = {
   meals: [],

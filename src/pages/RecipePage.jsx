@@ -6,7 +6,7 @@ import { useRecipes } from '../context/RecipesContext.jsx';
 import FallbackImg from '../components/FallbackImg.jsx';
 import Loading from '../components/Loading.jsx';
 
-const API_BASE = 'https://www.themealdb.com/api/json/v1/1';
+const API_BASE = process.env.REACT_APP_API_BASE;
 
 const initialState = {
   meal: null,

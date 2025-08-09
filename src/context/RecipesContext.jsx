@@ -1,6 +1,6 @@
 import React, { useEffect, createContext, useContext, useReducer } from 'react';
 
-const API_BASE = 'https://www.themealdb.com/api/json/v1/1';
+const API_BASE = process.env.REACT_APP_API_BASE;
 const RecipesContext = createContext();
 
 const ACTIONS = {
